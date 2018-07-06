@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <style media="screen">
+  	.green{
+  		color: green;
+  	}
+</style>
+  </head>
+  <body>
+  	<h1>Este es un evento que hay que activarlo por el usuario</h1>
+  <script type="text/javascript">
+  	 $("h1").on("click", function()
+  	{$("h1").addClass("green");
+    })
+    </script>
+     <script type="text/javascript">
+      $("h1").on("click", function()
+      {
+        alert("chao")
+      });
+    </script>
+  </body>
+</html>
