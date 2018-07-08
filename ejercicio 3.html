@@ -1,30 +1,17 @@
-Ejercicio 3
-(no pude hacer la transición de 1 segundo a la row-3)
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title></title>
+
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+    
+  </script>
    
-    <style media="screen">
-     .row{
-        transition: 1s;
-      }
-     </style> 
-   
-     <style media="screen">
-       .row{  
-        transition:  1s; 
-      }
-      .gray{
-        color: gray;
-      }
-    </style>
-     
+              
      </head>
   <body>
  
@@ -36,9 +23,7 @@ Ejercicio 3
     $("h1").css("color", "red");
     $("section").css("background-color", "yellow" );
   </script>
-
-
-      <span class="counter" style="font-size: 10em"> 101 </span>
+     <span class="counter" style="font-size: 10em"> 111 </span>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
   </div>
 </section>
@@ -56,21 +41,32 @@ Ejercicio 3
           <td> 2 </td>
         </tr>
        
-        <tr class="row" id="row-3"style="background-color: gray;" > 
+        <tr class="row" id="row_3" > 
           <td> 3 </td>
           <td> 3 </td>
           <td> 3 </td>
-    <script type="text/javascript">
-     $("row").on("click", function(){ 
-     $("row").addClass("gray");})
         </tr>
-
-    </script>
         <tr class="row" style="background-color: red;" id="row-4">
           <td> 4 </td>
           <td> 4 </td>
           <td> 4 </td>
         </tr>
+    <!-- Mi código Javascript -->
+    <script type="text/javascript">
+     $("#row_3").on("click", function()
+     { 
+       // $("row_3").addCSS("cambiar_gris");
+       $("#row_3").css("background-color", "grey");
+       $("#row_3").css("transition-delay", "4s");
+     })
+       
+    </script>
+     <script type="text/javascript">  
+     $("row_3").on("click", function() 
+     { 
+     $("row_3").preappend("hola");})
+      </script>
+
 
       </tbody>
     </table>
